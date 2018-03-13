@@ -8,7 +8,8 @@ namespace SocialNet.Models
         public int Id { get; set; }
 
         [Required]
-        public string Author { get; set; }
+        public int AuthorId { get; set; }
+        public virtual UserProfile Author { get; set; }
 
         [Required]
         [DataType(DataType.MultilineText)]

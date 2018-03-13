@@ -7,6 +7,7 @@ namespace SocialNet.Models
         public int Id { get; set; }
 
         [Required]
+        [DataType(DataType.ImageUrl)]
         public string ImageUrl { get; set; }
 
         [Required]
