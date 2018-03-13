@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27428.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNet.Models", "SocialNet.Models\SocialNet.Models.csproj", "{5D078D1E-935E-430D-B50B-D7286465C08D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNet.Data", "SocialNet.Data\SocialNet.Data.csproj", "{EBA0A73E-76B6-4C0E-B550-FAAA3C94460D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialNet.Console", "SocialNet.Console\SocialNet.Console.csproj", "{A1FCBEE2-6399-4456-A16D-4DD9B4989F1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{5D078D1E-935E-430D-B50B-D7286465C08D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D078D1E-935E-430D-B50B-D7286465C08D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D078D1E-935E-430D-B50B-D7286465C08D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBA0A73E-76B6-4C0E-B550-FAAA3C94460D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA0A73E-76B6-4C0E-B550-FAAA3C94460D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA0A73E-76B6-4C0E-B550-FAAA3C94460D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA0A73E-76B6-4C0E-B550-FAAA3C94460D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1FCBEE2-6399-4456-A16D-4DD9B4989F1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1FCBEE2-6399-4456-A16D-4DD9B4989F1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1FCBEE2-6399-4456-A16D-4DD9B4989F1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1FCBEE2-6399-4456-A16D-4DD9B4989F1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
