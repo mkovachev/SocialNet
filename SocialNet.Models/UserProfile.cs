@@ -9,14 +9,14 @@ namespace SocialNet.Models
     {
         private ICollection<FriendShip> friendShips;
         private ICollection<Post> posts;
-        private ICollection<Message> massages;
+        private ICollection<Message> messages;
         private ICollection<Image> images;
 
         public UserProfile()
         {
             this.friendShips = new HashSet<FriendShip>();
             this.posts = new HashSet<Post>();
-            this.massages = new HashSet<Message>();
+            this.messages = new HashSet<Message>();
             this.images = new HashSet<Image>();
         }
 
@@ -25,7 +25,7 @@ namespace SocialNet.Models
         [Required]
         [MinLength(4)]
         [MaxLength(20)]
-        [Index("Username", 1, IsUnique = true)]
+        [Index(IsUnique = true)]
         public string Username { get; set; }
 
         [MinLength(2)]
@@ -55,10 +55,10 @@ namespace SocialNet.Models
         }
 
 
-        public virtual ICollection<Message> Massages
+        public virtual ICollection<Message> Messages
         {
-            get => this.massages;
-            set => this.massages = value;
+            get => this.messages;
+            set => this.messages = value;
         }
 
 
