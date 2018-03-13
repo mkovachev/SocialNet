@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SocialNet.Models
 {
@@ -23,9 +24,6 @@ namespace SocialNet.Models
         public bool ApprovedStatus { get; set; }
 
         public DateTime? FriendsSince { get; set; }
-
-        public int UserProfileId { get; set; }
-        public virtual UserProfile UserProfile { get; set; }
 
         public virtual ICollection<Message> Messages
         {

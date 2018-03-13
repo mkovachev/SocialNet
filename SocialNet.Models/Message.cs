@@ -8,10 +8,6 @@ namespace SocialNet.Models
         public int Id { get; set; }
 
         [Required]
-        public int AuthorId { get; set; }
-        public virtual UserProfile Author { get; set; }
-
-        [Required]
         [DataType(DataType.MultilineText)]
         public string Content { get; set; }
 
@@ -21,6 +17,10 @@ namespace SocialNet.Models
 
         [DataType(DataType.DateTime)]
         public DateTime? SeenOn { get; set; }
+
+        [Required]
+        public int AuthorId { get; set; }
+        public virtual UserProfile Author { get; set; }
 
         public int FriendShipId { get; set; }
         public virtual FriendShip FriendShip { get; set; }
