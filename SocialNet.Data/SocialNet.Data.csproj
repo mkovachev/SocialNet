@@ -47,9 +47,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\201803131803256_init.cs" />
-    <Compile Include="Migrations\201803131803256_init.Designer.cs">
-      <DependentUpon>201803131803256_init.cs</DependentUpon>
+    <Compile Include="Migrations\201803131834239_init.cs" />
+    <Compile Include="Migrations\201803131834239_init.Designer.cs">
+      <DependentUpon>201803131834239_init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803131840422_removed friendship collection from user profile.cs" />
+    <Compile Include="Migrations\201803131840422_removed friendship collection from user profile.Designer.cs">
+      <DependentUpon>201803131840422_removed friendship collection from user profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,8 +70,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803131803256_init.resx">
-      <DependentUpon>201803131803256_init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201803131834239_init.resx">
+      <DependentUpon>201803131834239_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803131840422_removed friendship collection from user profile.resx">
+      <DependentUpon>201803131840422_removed friendship collection from user profile.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

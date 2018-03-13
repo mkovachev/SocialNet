@@ -13,7 +13,7 @@ namespace SocialNet.Data.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201803131803256_init"; }
+            get { return "201803131834239_init"; }
         }
         
         string IMigrationMetadata.Source
