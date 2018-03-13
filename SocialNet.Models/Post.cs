@@ -23,7 +23,7 @@ namespace SocialNet.Models
         [DataType(DataType.DateTime)]
         public DateTime PostedOn { get; set; }
 
-        public ICollection<UserProfile> UserProfiles
+        public ICollection<UserProfile> TaggedUsers
         {
             get => this.taggedUsers;
             set => this.taggedUsers = value;
