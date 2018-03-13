@@ -21,5 +21,8 @@ namespace SocialNet.Models
 
         [DataType(DataType.DateTime)]
         public DateTime? SeenOn { get; set; }
+
+        public int FriendShipId { get; set; }
+        public virtual FriendShip FriendShip { get; set; }
     }
 }
