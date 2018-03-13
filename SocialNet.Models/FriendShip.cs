@@ -14,8 +14,10 @@ namespace SocialNet.Models
 
         public int Id { get; set; }
 
+        public int SenderId { get; set; }
         public UserProfile Sender { get; set; }
 
+        public int ReceiverId { get; set; }
         public UserProfile Receiver { get; set; }
 
         public bool ApprovedStatus { get; set; }
