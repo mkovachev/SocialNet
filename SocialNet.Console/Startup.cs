@@ -8,8 +8,6 @@ namespace SocialNet.Console
         {
             var ctx = new SocialNetDbContext();
 
-            // Database.SetInitializer(strategy: new MigrateDatabaseToLatestVersion<SocialNetDbContext, Configuration>());
-
             // ctx.Database.CreateIfNotExists();
         }
     }

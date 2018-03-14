@@ -1,4 +1,5 @@
-﻿using SocialNet.Models;
+﻿using SocialNet.Data.Migrations;
+using SocialNet.Models;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 
@@ -9,6 +10,8 @@ namespace SocialNet.Data
         public SocialNetDbContext()
             : base("SocialNetConnection")
         {
+            var strategy = new MigrateDatabaseToLatestVersion<SocialNetDbContext, Configuration();
+            Database.SetInitializer(strategy);
 
         }
 
