@@ -10,7 +10,7 @@ namespace SocialNet.Data
         public SocialNetDbContext()
             : base("SocialNetConnection")
         {
-            var strategy = new MigrateDatabaseToLatestVersion<SocialNetDbContext, Configuration();
+            var strategy = new MigrateDatabaseToLatestVersion<SocialNetDbContext, Configuration>();
             Database.SetInitializer(strategy);
 
         }
