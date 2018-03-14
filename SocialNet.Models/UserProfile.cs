@@ -41,11 +41,11 @@ namespace SocialNet.Models
         public DateTime RegisteredOn { get; set; }
 
 
-        //public virtual ICollection<FriendShip> FriendShips
-        //{
-        //    get => this.friendShips;
-        //    set => this.friendShips = value;
-        //}
+        public virtual ICollection<FriendShip> FriendShips
+        {
+            get => this.friendShips;
+            set => this.friendShips = value;
+        }
 
 
         public virtual ICollection<Post> Posts

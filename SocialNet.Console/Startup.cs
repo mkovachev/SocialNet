@@ -6,7 +6,11 @@ namespace SocialNet.Console
     {
         public static void Main()
         {
-            var dbContext = new SocialNetDbContext();
+            var ctx = new SocialNetDbContext();
+
+            // Database.SetInitializer(strategy: new MigrateDatabaseToLatestVersion<SocialNetDbContext, Configuration>());
+
+            // ctx.Database.CreateIfNotExists();
         }
     }
 }
